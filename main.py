@@ -14,11 +14,8 @@ from aiogram.types import (
     InlineKeyboardMarkup,
     Message,
 )
-from dotenv import load_dotenv
 
-load_dotenv(".env")
-
-BOT_TOKEN = os.getenv("BOT_TOKEN")
+BOT_TOKEN = os.environ.get("BOT_TOKEN")
 VAST_API_KEY = os.getenv("VAST_API_KEY")
 INSTANCE_ID = os.getenv("INSTANCE_ID")
 
